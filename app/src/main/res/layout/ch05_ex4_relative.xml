@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp">
+
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Tel"
+        android:textSize="30dp"
+        android:id="@+id/txtTel"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtTel"
+        android:layout_toRightOf="@+id/txtTel"
+        android:layout_alignBaseline="@+id/txtTel"
+        android:hint="000-0000-0000"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCalcel"
+        android:layout_below="@+id/txtTel"
+        android:layout_alignParentRight="true"
+        android:text="취소"
+        android:layout_margin="10dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnInput"
+        android:layout_below="@+id/txtTel"
+        android:layout_toLeftOf="@+id/btnCalcel"
+        android:text="확인"
+        android:layout_margin="10dp"/>
+</RelativeLayout>
